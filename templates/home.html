@@ -1,3 +1,48 @@
-<h1>
-    Delivery Delay Prediction
-</h1>
+<!DOCTYPE html>
+<html >
+
+<head>
+  <meta charset="UTF-8">
+  <title>ML API</title>
+  <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+
+  
+</head>
+
+<body>
+ <div class="login">
+	<h1>Delivery Delay Prediction</h1>
+
+     <!-- Main Input For Receiving Query to our ML -->
+    <form action="{{ url_for('predict')}}"method="post">
+      <input type="text" name="customer_city" placeholder="Customer City" required="required" /><br>
+    	<input type="text" name="customer_state" placeholder="Customer State" required="required" /><br>
+        <input type="text" name="customer_zip" placeholder="Customer Zip" required="required" /><br>
+        <input type="text" name="order_date" placeholder="Order Date" required="required" /><br>
+        <input type="text" name="delivery_date" placeholder="Delivery Date" required="required" /><br>
+        <input type="" name="product_category" placeholder="Product Category" required="required" /><br>
+        <input type="" name="product_price" placeholder="Product Price" required="required" /><br>
+        <input type="" name="DIS" placeholder="" required="required" /><br>
+        <input type="" name="" ADplaceholder="" required="required" /><br>
+        <input type="" name="" placeholder="" required="required" /><br>
+        <input type="" name="" placeholder="" required="required" /><br>
+        <input type="" name="" placeholder="" required="required" /><br>
+        <input type="" name="" placeholder="" required="required" /><br>
+
+       
+
+        <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+    </form>
+
+   <br>
+   <br>
+  
+   
+ </div>
+ {{prediction_text}}
+
+</body>
+</html>
