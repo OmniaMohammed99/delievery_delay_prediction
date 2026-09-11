@@ -19,20 +19,27 @@
      <!-- Main Input For Receiving Query to our ML -->
     <form action="{{ url_for('predict')}}"method="post">
       <input type="text" name="customer_city" placeholder="Customer City" required="required" /><br>
-    	<input type="text" name="customer_state" placeholder="Customer State" required="required" /><br>
-        <input type="text" name="customer_zip" placeholder="Customer Zip" required="required" /><br>
-        <input type="text" name="order_date" placeholder="Order Date" required="required" /><br>
-        <input type="text" name="delivery_date" placeholder="Delivery Date" required="required" /><br>
-        <input type="" name="product_category" placeholder="Product Category" required="required" /><br>
-        <input type="" name="product_price" placeholder="Product Price" required="required" /><br>
-        <input type="" name="DIS" placeholder="" required="required" /><br>
-        <input type="" name="" ADplaceholder="" required="required" /><br>
-        <input type="" name="" placeholder="" required="required" /><br>
-        <input type="" name="" placeholder="" required="required" /><br>
-        <input type="" name="" placeholder="" required="required" /><br>
-        <input type="" name="" placeholder="" required="required" /><br>
-
-       
+    	  <input type="text" name="customer_state" placeholder="Customer State" required="required" /><br>
+        <input type="number" name="item_count" placeholder="Item Count" required="required" /><br>
+        <input type="number" name="unique_products" placeholder="unique_products" required="required" /><br>
+        <input type="number" name="unique_sellers" placeholder="unique_sellers" required="required" /><br>
+        <input type="number" name="total_item_price" placeholder="total_item_price" required="required" /><br>
+        <input type="number" name="total_freight" placeholder="total_freight" required="required" /><br>
+        <input type="number" name="total_order_value" placeholder="total_order_value" required="required" /><br>
+        <input type="number" name="total_payment_value" placeholder="total_payment_value" required="required" /><br>
+        <input type="number" name="payment_count" placeholder="payment_count" required="required" /><br>
+        <input type="number" name="max_installments" placeholder="max_installments" required="required" /><br>
+        <input type="number" name="payment_type_count" placeholder="payment_type_count" required="required" /><br>
+        <input type="number" name="review_count" placeholder="review_count" required="required" /><br>
+        <input type="number" name="avg_review_score" placeholder="avg_review_score" required="required" /><br>
+        <input type="number" name="order_purchase_year" placeholder="Order Purchase Year" required="required" /><br>
+        <input type="number" name="order_purchase_month" placeholder="Order Purchase Month" required="required" /><br>
+        <input type="number" name="order_purchase_day" placeholder="Order Purchase Day" required="required" /><br>
+        <input type="number" name="order_purchase_hour" placeholder="Order Purchase Hour" required="required" /><br>
+        <input type="number" name="order_approved_at_year" placeholder="Order Approved At Year" required="required" /><br>
+        <input type="number" name="order_approved_at_month" placeholder="Order Approved At Month" required="required" /><br>
+        <input type="number" name="order_approved_at_day" placeholder="Order Approved At Day" required="required" /><br>
+        <input type="number" name="order_approved_at_hour" placeholder="Order Approved At Hour" required="required" /><br>
 
         <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
     </form>
