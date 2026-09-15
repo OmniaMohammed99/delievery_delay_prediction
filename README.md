@@ -1,5 +1,9 @@
 # Delivery Delay Prediction
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> f451492b6ab737c6bb562ad8638bd49460b72557
 A Flask web application that predicts whether an Olist order is likely to experience a delivery delay.
 
 ## Project Structure
@@ -14,17 +18,21 @@ delievery_delay_prediction/
 ├── src/
 ├── tests/
 ├── requirements/
+<<<<<<< HEAD
 └──Dockerfile
 └──.dockerignore
 └──pytest.ini
 └──LICENSE
 └──.gitignore
+=======
+>>>>>>> f451492b6ab737c6bb562ad8638bd49460b72557
 ├── run.py
 └── README.md
 ```
 
 ## Requirements
 
+<<<<<<< HEAD
 ### -r requirements.txt
 
 * Flask==3.1.3
@@ -42,6 +50,15 @@ delievery_delay_prediction/
 * pytest==8.4.2
 * black==25.1.0
 * flake8==7.3.0
+=======
+* Python 3.11
+* Flask==3.1.3
+* pandas==3.0.5
+* NumPy==2.4.6
+* scikit-learn 1.7
+* Flask
+
+>>>>>>> f451492b6ab737c6bb562ad8638bd49460b72557
 
 ## Installation
 
@@ -94,6 +111,10 @@ Application paths and parameters are stored in:
 config/config.yaml
 ```
 
+<<<<<<< HEAD
+=======
+Do not hardcode model paths or application parameters in the Python source code.
+>>>>>>> f451492b6ab737c6bb562ad8638bd49460b72557
 
 ## Run the Application
 
